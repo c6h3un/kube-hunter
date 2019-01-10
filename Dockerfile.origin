@@ -13,5 +13,4 @@ RUN pip install -r /kube-hunter/requirements.txt
 COPY . /kube-hunter
 WORKDIR /kube-hunter
 
-#ENTRYPOINT ["python",  "kube-hunter.py"]
-CMD ["./run.sh" ]
+ENTRYPOINT ["python",  "kube-hunter.py"]
